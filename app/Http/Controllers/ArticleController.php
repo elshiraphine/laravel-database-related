@@ -9,6 +9,7 @@ class ArticleController extends Controller
 {
     public function index(){
         return view('article', [
+            "title" => "Article Page",
             "name" => "Elshe Erviana Angely",
             "email" => "elshemile16@gmail.com",
             "articles" => Article::all()

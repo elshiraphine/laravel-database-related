@@ -47,7 +47,7 @@ Route::get("/article", [ArticleController::class, 'index']);
 Route::get('/article/{article:slug}', [ArticleController::class,  'content']);
 
 Route::get('/categories', function(){
-    return view('categories', [
+    return view('article', [
         'title' => 'Post Categories',
         'categories' => Category::all()
     ]);
